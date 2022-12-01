@@ -16,6 +16,8 @@ public class CircleBehaviour : MonoBehaviour
     public int nombreSouvenirsRecuperes = 0;
     [SerializeField] private List<GameObject> souvenirs;
     bool isSouvenirOn = false;
+    public string LevelToLoad;
+
 
     /*bool mustMakeSouvenirDisappeur = false;
     float souvenirTime = 0f;
@@ -41,6 +43,8 @@ public class CircleBehaviour : MonoBehaviour
         {
             ResetSouvenirDisplay();
         }
+
+        LoadLevel();
     }
 
     private void ResetSouvenirDisplay()
@@ -117,5 +121,12 @@ public class CircleBehaviour : MonoBehaviour
     }
     */
 
-    
+    void LoadLevel()
+    {
+        if (nombreSouvenirsRecuperes == 2)
+        {
+            SceneManager.LoadScene(LevelToLoad);
+        }
+    }
+
 }

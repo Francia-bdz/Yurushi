@@ -418,7 +418,7 @@ MonoBehaviour:
   souvenirs:
   - {fileID: 1920753527}
   - {fileID: 1368844172}
-  Scene2: 
+  LevelToLoad: Scene2_Francia
 --- !u!50 &1309657071
 Rigidbody2D:
   serializedVersion: 4
