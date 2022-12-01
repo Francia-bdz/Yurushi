@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes_Emma/yurushi_git1jeu.unity
     guid: a1794e354d513b74d8996841ca3414e3
+  - enabled: 1
+    path: Assets/Scenes_Emma/choice.unity
+    guid: 279678f3f30532e48b8e4f9ba084acdb
+  - enabled: 1
+    path: Assets/Scenes_Emma/pardon.unity
+    guid: e2fbfe9d5ba4aff4195ad842aeff25f8
+  - enabled: 1
+    path: Assets/Scenes_Emma/death.unity
+    guid: f5d65ec4895dfcb49adc5ed821fb526a
   m_configObjects: {}
