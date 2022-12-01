@@ -6,14 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-<<<<<<< HEAD
-    path: Assets/Scenes/jeu.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-=======
-    path: Assets/Scenes_Francia/Scene1_Francia.unity
-    guid: de01f9eb9faac4a3e9d5c64bc7a49838
+    path: Assets/Scenes_Emma/New Scene.unity
+    guid: a1ef728c3c01fa645929a91f8481692d
   - enabled: 1
-    path: Assets/Scenes_Francia/Scene2_Francia.unity
-    guid: 9a3aa7a186abc4b4b85fcd8a73c7df67
->>>>>>> 28cd883325f64dc6f0aa8118d383d87af7b51e54
+    path: Assets/Scenes_Emma/yurushi_git1jeu.unity
+    guid: a1794e354d513b74d8996841ca3414e3
   m_configObjects: {}
