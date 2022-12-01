@@ -9,7 +9,6 @@ public class playerbehavior : MonoBehaviour
     [SerializeField] private float groundedDistance = 2;
     [SerializeField] private LayerMask groundedMask;
     [SerializeField] private GameObject dot;
-    [SerializeField] private float velocityanim;
 
 
     Rigidbody2D rb2D;

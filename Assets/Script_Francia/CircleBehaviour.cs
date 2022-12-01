@@ -13,6 +13,7 @@ public class CircleBehaviour : MonoBehaviour
     [SerializeField] private LayerMask groundedMask;
     Rigidbody2D rb2D;
 
+    public int nombreSouvenirs = 2;
     public int nombreSouvenirsRecuperes = 0;
     [SerializeField] private List<GameObject> souvenirs;
     bool isSouvenirOn = false;
@@ -44,7 +45,6 @@ public class CircleBehaviour : MonoBehaviour
             ResetSouvenirDisplay();
         }
 
-        LoadLevel();
     }
 
     private void ResetSouvenirDisplay()
@@ -109,6 +109,8 @@ public class CircleBehaviour : MonoBehaviour
             isSouvenirOn = true;
         }
 
+        LoadLevel(collision);
+
 
     }
 
@@ -119,14 +121,15 @@ public class CircleBehaviour : MonoBehaviour
             SceneManager.LoadScene(Scene2);
         }
     }
-    */
-
-    void LoadLevel()
+  
+      */
+    void LoadLevel(Collision2D collision)
     {
-        if (nombreSouvenirsRecuperes == 2)
+        if (collision.gameObject.tag == "Pierre" && nombreSouvenirsRecuperes == nombreSouvenirs)
         {
             SceneManager.LoadScene(LevelToLoad);
         }
     }
+    
 
 }

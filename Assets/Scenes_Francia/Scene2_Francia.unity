@@ -418,7 +418,7 @@ MonoBehaviour:
   souvenirs:
   - {fileID: 1920753527}
   - {fileID: 1368844172}
-  Scene2: 
+  LevelToLoad: Scene
 --- !u!50 &1309657071
 Rigidbody2D:
   serializedVersion: 4
@@ -661,7 +661,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 4dfcc146f49e74eae860bcf01e8e7112, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: 24ed46b0f8ea94ad8b746c685baa86dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -669,7 +669,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1989348048
