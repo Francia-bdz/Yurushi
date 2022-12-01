@@ -20,9 +20,6 @@ public class CircleBehaviour : MonoBehaviour
     public string LevelToLoad;
 
 
-    /*bool mustMakeSouvenirDisappeur = false;
-    float souvenirTime = 0f;
-    public float maxSouvenirTime = 10f;*/
 
     private void Awake()
     {
@@ -114,15 +111,7 @@ public class CircleBehaviour : MonoBehaviour
 
     }
 
-    /* public void LevelUp()
-    {
-        if (nombreSouvenirsRecuperes == 2)
-        {
-            SceneManager.LoadScene(Scene2);
-        }
-    }
-  
-      */
+
     void LoadLevel(Collision2D collision)
     {
         if (collision.gameObject.tag == "Pierre" && nombreSouvenirsRecuperes == nombreSouvenirs)
