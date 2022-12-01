@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 574941862}
   - component: {fileID: 574941861}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Souvenir
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -321,7 +321,7 @@ GameObject:
   - component: {fileID: 1309657067}
   - component: {fileID: 1309657069}
   - component: {fileID: 1309657071}
-  - component: {fileID: 1309657070}
+  - component: {fileID: 1309657072}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -371,7 +371,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: 61cd15d9978984fd6810be2083e5f25f, type: 3}
-  m_Color: {r: 0.4716981, g: 0.3048238, b: 0.3048238, a: 1}
+  m_Color: {r: 0.7075472, g: 0.31038624, b: 0.31038624, a: 1}
   m_FlipX: 0
   m_FlipY: 1
   m_DrawMode: 0
@@ -418,32 +418,7 @@ MonoBehaviour:
   souvenirs:
   - {fileID: 1920753527}
   - {fileID: 1368844172}
---- !u!61 &1309657070
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309657066}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  Scene2: 
 --- !u!50 &1309657071
 Rigidbody2D:
   serializedVersion: 4
@@ -465,6 +440,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!58 &1309657072
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309657066}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &1368844172
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,7 +468,7 @@ GameObject:
   - component: {fileID: 1368844175}
   - component: {fileID: 1368844174}
   m_Layer: 5
-  m_Name: RawImage (1)
+  m_Name: Souvenir2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -550,7 +541,7 @@ GameObject:
   - component: {fileID: 1920753530}
   - component: {fileID: 1920753529}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: Souvenir1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -623,7 +614,7 @@ GameObject:
   - component: {fileID: 1989348047}
   - component: {fileID: 1989348049}
   m_Layer: 3
-  m_Name: Square
+  m_Name: Sol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -678,7 +669,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1989348048
