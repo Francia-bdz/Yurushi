@@ -54,7 +54,7 @@ public class KeikoBehaviour : MonoBehaviour
     {
 
 
-        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
+        if (Input.GetKeyDown(KeyCode.UpArrow) && IsGrounded())
         {
             rb2D.velocity = jumpForce * Vector3.up;
         }
