@@ -1,19 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class playerbehavior : MonoBehaviour
+public class KeikoBehaviour : MonoBehaviour
 {
     [SerializeField] private float speed = 5;
     [SerializeField] private float jumpForce = 17;
     [SerializeField] private float groundedDistance = 2;
     [SerializeField] private LayerMask groundedMask;
-    [SerializeField] private GameObject dot;
 
 
     Rigidbody2D rb2D;
     SpriteRenderer sr;
     public Animator animator;
+
+    public int nombreSouvenirs = 2;
+    public int nombreSouvenirsRecuperes = 0;
+    [SerializeField] private List<GameObject> souvenirs;
+    bool isSouvenirOn = false;
+    public string LevelToLoad;
+
     private void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -33,7 +41,12 @@ public class playerbehavior : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(speed));
         Move();
         Jump();
-                
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ResetSouvenirDisplay();
+        }
+
     }
 
 
@@ -51,14 +64,14 @@ public class playerbehavior : MonoBehaviour
    
     private void Move()
     {
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow)&& !isSouvenirOn)
         {
             transform.position = transform.position + speed * Time.deltaTime * Vector3.right;
             //IsMoving
             animator.SetBool("IsMoving", true);
             sr.flipX = false;
         }
-        else if (Input.GetKey(KeyCode.LeftArrow))
+        else if (Input.GetKey(KeyCode.LeftArrow) && !isSouvenirOn)
         {
             transform.position = transform.position + speed * Time.deltaTime * Vector3.left;
             animator.SetBool("IsMoving", true);
@@ -84,4 +97,38 @@ public class playerbehavior : MonoBehaviour
 
     }
 
+    private void ResetSouvenirDisplay()
+    {
+        for (int i = 0; i < souvenirs.Count; i++)
+        {
+            souvenirs[i].SetActive(false);
+        }
+
+        isSouvenirOn = false;
+    }
+
+    void LoadLevel(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Statue" && nombreSouvenirsRecuperes == nombreSouvenirs)
+        {
+            SceneManager.LoadScene(LevelToLoad);
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+
+    {
+        if (collision.gameObject.tag == "Souvenir")
+        {
+
+            Destroy(collision.gameObject);
+            Thread.Sleep(200);
+            souvenirs[nombreSouvenirsRecuperes].SetActive(true);
+            nombreSouvenirsRecuperes++;
+            isSouvenirOn = true;
+        }
+
+        LoadLevel(collision);
+
+
+    }
 }

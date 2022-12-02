@@ -13,7 +13,7 @@ public class CircleBehaviour : MonoBehaviour
     [SerializeField] private LayerMask groundedMask;
     Rigidbody2D rb2D;
 
-    public int nombreSouvenirs = 2;
+    public float nombreSouvenirs = 2;
     public int nombreSouvenirsRecuperes = 0;
     [SerializeField] private List<GameObject> souvenirs;
     bool isSouvenirOn = false;

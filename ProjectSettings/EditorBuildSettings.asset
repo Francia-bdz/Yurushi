@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes_Emma/death.unity
     guid: f5d65ec4895dfcb49adc5ed821fb526a
+  - enabled: 1
+    path: Assets/Scenes_Francia/jeu.unity
+    guid: 7a20bc7ed55d855498810d9d49ec98b1
   m_configObjects: {}
