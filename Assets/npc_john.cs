@@ -10,6 +10,7 @@ public class npc_john : MonoBehaviour
     public string[] dialogue;
     private int index;
 
+    public GameObject contButton; 
     public float wordSpeed;
     public bool playerIsClose;
     // Update is called once per frame
@@ -28,10 +29,16 @@ public class npc_john : MonoBehaviour
                 StartCoroutine(Typing());
             }
         }
+        if(dialogueText.text == dialogue[index])
+        {
+            contButton.SetActive(true);
+        }
     }
 
     public void NextLine()
     {
+        contButton.SetActive(false);
+
         if (index < dialogue.Length - 1)
         {
             index++;
