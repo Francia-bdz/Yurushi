@@ -32,36 +32,22 @@ public class johnBehaviour : MonoBehaviour
     {
         animator.SetFloat("Speed", Mathf.Abs(speed));
         Move();
-        Jump();
-
-
+        
     }
 
 
-    private void Jump()
-    {
-
-
-        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
-        {
-            rb2D.velocity = jumpForce * Vector3.up;
-        }
-
-
-    }
+ 
 
     private void Move()
     {
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.position = transform.position + speed * Time.deltaTime * Vector3.right;
             //IsMoving
             animator.SetBool("isMoving", true);
             sr.flipX = false;
         }
         else if (Input.GetKey(KeyCode.LeftArrow) )
         {
-            transform.position = transform.position + speed * Time.deltaTime * Vector3.left;
             animator.SetBool("isMoving", true);
             sr.flipX = true;
         }
@@ -71,19 +57,6 @@ public class johnBehaviour : MonoBehaviour
         }
     }
 
-    bool IsGrounded()
-    {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, groundedDistance, groundedMask);
-        Debug.DrawRay(transform.position, Vector2.down * groundedDistance, Color.red);
-        if (hit.collider == null)
-        {
-            return false;
-        }
-        else
-        {
-            return true;
-        }
-
-    }
+   
 
 }
