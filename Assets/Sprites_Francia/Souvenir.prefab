@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 8649372121871091903}
   - component: {fileID: 5304874486612606180}
   - component: {fileID: 2217987201378786612}
+  - component: {fileID: -4693788896434499552}
   m_Layer: 0
   m_Name: Souvenir
-  m_TagString: Untagged
+  m_TagString: Souvenir
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 5624209051548304}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.0349, y: -0.2305, z: 0}
-  m_LocalScale: {x: 0.08618446, y: 0.08618446, z: 0.08618446}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -216,3 +217,17 @@ PolygonCollider2D:
       - {x: 6.40625, y: 6.6328125}
       - {x: 6.359375, y: 6.6484375}
       - {x: 6.328125, y: 6.6171875}
+--- !u!114 &-4693788896434499552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5624209051548304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a84b50dd69e754a01af8e0709ec2eee1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.2
+  frequency: 1

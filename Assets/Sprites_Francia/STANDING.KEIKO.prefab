@@ -122,13 +122,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  jumpForce: 7
+  jumpForce: 5
   groundedDistance: 3
   groundedMask:
     serializedVersion: 2
     m_Bits: 8
-  dot: {fileID: 0}
   animator: {fileID: 4093433193908785437}
+  nombreSouvenirs: 2
+  nombreSouvenirsRecuperes: 0
+  souvenirs: []
+  LevelToLoad: 
 --- !u!95 &4093433193908785437
 Animator:
   serializedVersion: 4
