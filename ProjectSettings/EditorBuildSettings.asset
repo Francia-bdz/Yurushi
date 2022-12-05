@@ -38,4 +38,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene_Off/Lettre.unity
     guid: a37f703d2fa6543cb9e0fed7036b94e6
+  - enabled: 1
+    path: Assets/Scene_Off/Choix.unity
+    guid: b6fb519abd1054276816fb40612f666e
+  - enabled: 1
+    path: Assets/Scene_Off/Mort.unity
+    guid: 4082836c1319f4e25be3737d70d2ddec
+  - enabled: 1
+    path: Assets/Scene_Off/Pardon.unity
+    guid: c152be803bc1a4224ac1d3f4b9fb7f6e
+  - enabled: 1
+    path: Assets/Scene_Off/Scene_finales.unity
+    guid: fce2f2f43d1b549778c228498dd0d785
   m_configObjects: {}

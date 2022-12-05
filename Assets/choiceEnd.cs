@@ -7,11 +7,11 @@ public class choiceEnd : MonoBehaviour
     // Start is called before the first frame update
     public void killJohn()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("death");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Mort");
     }
 
     public void saveJohnn()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("pardon");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Pardon");
     }
 }

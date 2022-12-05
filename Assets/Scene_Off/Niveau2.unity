@@ -2860,7 +2860,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 510247334, guid: 561e3650912f4451a9fc97fef500e55e, type: 3}
       propertyPath: speed
-      value: 2
+      value: 1.75
       objectReference: {fileID: 0}
     - target: {fileID: 510247334, guid: 561e3650912f4451a9fc97fef500e55e, type: 3}
       propertyPath: jumpForce
@@ -2868,11 +2868,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7404672448802009864, guid: 561e3650912f4451a9fc97fef500e55e, type: 3}
       propertyPath: speed
-      value: 2
+      value: 1.75
       objectReference: {fileID: 0}
     - target: {fileID: 7404672448802009864, guid: 561e3650912f4451a9fc97fef500e55e, type: 3}
       propertyPath: jumpForce
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7404672448802009864, guid: 561e3650912f4451a9fc97fef500e55e, type: 3}
+      propertyPath: LevelToLoad
+      value: Scene_finales
       objectReference: {fileID: 0}
     - target: {fileID: 7404672448802009864, guid: 561e3650912f4451a9fc97fef500e55e, type: 3}
       propertyPath: nombreSouvenirs
@@ -3198,7 +3202,7 @@ Transform:
   m_GameObject: {fileID: 1734168982}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -161.4, y: -6.15, z: -21225}
-  m_LocalScale: {x: 119.3, y: 119.3, z: 119.3}
+  m_LocalScale: {x: 90, y: 90, z: 90}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 720418912}
