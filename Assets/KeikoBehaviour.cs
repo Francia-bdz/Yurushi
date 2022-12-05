@@ -19,6 +19,7 @@ public class KeikoBehaviour : MonoBehaviour
     public int nombreSouvenirs = 2;
     public int nombreSouvenirsRecuperes = 0;
     [SerializeField] private List<GameObject> souvenirs;
+    public GameObject text;
     bool isSouvenirOn = false;
     public string LevelToLoad;
 
@@ -127,8 +128,18 @@ public class KeikoBehaviour : MonoBehaviour
             isSouvenirOn = true;
         }
 
+        if (collision.gameObject.tag == "John")
+        {
+            text.SetActive(true);
+
+        }
+
+
+
         LoadLevel(collision);
 
 
     }
+
+
 }

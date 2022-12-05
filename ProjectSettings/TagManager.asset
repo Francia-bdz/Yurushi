@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Souvenir
   - Statue
+  - John
   layers:
   - Default
   - TransparentFX
