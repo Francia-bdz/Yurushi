@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: a4606a4fb512e4796a7094f8aeaa0659
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - ShigotoMemogaki
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 08301fb62fdb442c4a6b1d800ddf9f24, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
