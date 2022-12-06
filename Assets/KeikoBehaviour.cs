@@ -115,6 +115,8 @@ public class KeikoBehaviour : MonoBehaviour
             SceneManager.LoadScene(LevelToLoad);
         }
     }
+
+
     private void OnCollisionEnter2D(Collision2D collision)
 
     {
